@@ -1,0 +1,56 @@
+INFO  @ Mon, 26 Jul 2021 15:35:18: 
+# Command line: callpeak -t SRR576933.sam -c SRR576938.sam --format SAM --gsize 4641652 --name macs2 --bw 400 --keep-dup 2 --bdg --nomodel --extsize 200
+# ARGUMENTS LIST:
+# name = macs2
+# format = SAM
+# ChIP-seq file = ['SRR576933.sam']
+# control file = ['SRR576938.sam']
+# effective genome size = 4.64e+06
+# band width = 400
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Mon, 26 Jul 2021 15:35:18: #1 read tag files... 
+INFO  @ Mon, 26 Jul 2021 15:35:18: #1 read treatment tags... 
+INFO  @ Mon, 26 Jul 2021 15:35:20:  2000000 
+INFO  @ Mon, 26 Jul 2021 15:35:24:  3000000 
+INFO  @ Mon, 26 Jul 2021 15:35:26: #1.2 read input tags... 
+INFO  @ Mon, 26 Jul 2021 15:35:32:  1000000 
+INFO  @ Mon, 26 Jul 2021 15:35:40:  2000000 
+INFO  @ Mon, 26 Jul 2021 15:35:48:  3000000 
+INFO  @ Mon, 26 Jul 2021 15:35:56:  4000000 
+INFO  @ Mon, 26 Jul 2021 15:36:03:  5000000 
+INFO  @ Mon, 26 Jul 2021 15:36:05:  6000000 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 tag size is determined as 35 bps 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 tag size = 35.0 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  total tags in treatment: 2242359 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 user defined the maximum tags... 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  tags after filtering in treatment: 1571169 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  Redundant rate of treatment: 0.30 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  total tags in control: 6392931 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 user defined the maximum tags... 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 filter out redundant tags at the same location and the same strand by allowing at most 2 tag(s) 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  tags after filtering in control: 5751120 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1  Redundant rate of control: 0.10 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #1 finished! 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #2 Build Peak Model... 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #2 Skipped... 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #2 Use 200 as fragment length 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #3 Call peaks... 
+INFO  @ Mon, 26 Jul 2021 15:36:07: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Mon, 26 Jul 2021 15:36:17: #3 In the peak calling step, the following will be performed simultaneously: 
+INFO  @ Mon, 26 Jul 2021 15:36:17: #3   Write bedGraph files for treatment pileup (after scaling if necessary)... macs2_treat_pileup.bdg 
+INFO  @ Mon, 26 Jul 2021 15:36:17: #3   Write bedGraph files for control lambda (after scaling if necessary)... macs2_control_lambda.bdg 
+INFO  @ Mon, 26 Jul 2021 15:36:17: #3   Pileup will be based on sequencing depth in treatment. 
+INFO  @ Mon, 26 Jul 2021 15:36:17: #3 Call peaks for each chromosome... 
+INFO  @ Mon, 26 Jul 2021 15:36:24: #4 Write output xls file... macs2_peaks.xls 
+INFO  @ Mon, 26 Jul 2021 15:36:24: #4 Write peak in narrowPeak format file... macs2_peaks.narrowPeak 
+INFO  @ Mon, 26 Jul 2021 15:36:24: #4 Write summits bed file... macs2_summits.bed 
+INFO  @ Mon, 26 Jul 2021 15:36:24: Done! 
